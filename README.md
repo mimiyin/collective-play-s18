@@ -17,7 +17,7 @@
    * [Atom Live Server Package](https://atom.io/packages/atom-live-server)
    * [Node Server](https://nodejs.org/en/)
 
-# Design Strategy 1: Every man for himself.
+# Design Strategy 1: Every man for himself
 
 ## Week 1: Hello World: Collecting Real-time Inputs
 #### Question(s)
@@ -111,7 +111,7 @@
 ***
 ***
 # Course description
-Rules of play shape competitive games from checkers to football. But how do the rules of interaction shape non-competitive play? In this course, we will explore, implement and test design strategies for playful group interactions.
+Rules of play shape competitive games from checkers to football. But how do the rules of interaction shape non-competitive play? In this course, we will explore, code and test design strategies for playful group interactions.
 
 Some of the questions we will ask and attempt to answer:
 
