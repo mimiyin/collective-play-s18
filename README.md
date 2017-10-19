@@ -3,7 +3,7 @@
    * Mimi Yin, mimi.yin@nyu.edu
    * [Office Hours Signup](https://itp.nyu.edu/inwiki/Signup/Mimi)
 
-### See course description below.
+### [See course description below.](https://github.com/mimiyin/collective-play-s18/blob/master/README.md#course-description)
 
 ## Resources
    * Class Google Group. I will be adding you after the first class.
