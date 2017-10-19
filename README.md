@@ -115,14 +115,14 @@ Rules of play shape competitive games from checkers to football. But how do the 
 
 Some of the questions we will ask and attempt to answer:
 
-   1 What encourages participation?
-   1 Can we work together as a group if “every man is for himself”?
-   1 When does influence turn into interference?
-   1 Are leaders necessary? Is it possible to lead from behind?
-   1 What’s the difference between taking turns and having a conversation?
-   1 Does participation become pointless if individual effort is completely subsumed under collective output?
-   1 Does democracy = inclusion?
-   1 What happens when the slowest person sets the pace?
+   * What encourages participation?
+   * Can we work together as a group if “every man is for himself”?
+   * When does influence turn into interference?
+   * Are leaders necessary? Is it possible to lead from behind?
+   * What’s the difference between taking turns and having a conversation?
+   * Does participation become pointless if individual effort is completely subsumed under collective output?
+   * Does democracy = inclusion?
+   * What happens when the slowest person sets the pace?
 
 Interaction inputs we will play with will include: mouse, keyboard, mobile device sensors, and microphone. Outputs will include, visuals, text and sound. We will use p5, websockets and node.js for real-time interaction. Class time will be split between playing with and critiquing examples and translating design strategies into code and logic.
 
