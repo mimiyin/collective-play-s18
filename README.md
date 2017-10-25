@@ -126,5 +126,13 @@ Some of the questions we will ask and attempt to answer:
 
 Interaction inputs we will play with will include: mouse, keyboard, mobile device sensors, and microphone. Outputs will include, visuals, text and sound. We will use p5, websockets and node.js for real-time interaction. Class time will be split between playing with and critiquing examples and translating design strategies into code and logic.
 
+## Pre-requesites
+ICM or the equivalent.
 
+## Grading
+- 40% for showing up (on time!) and participating with curiosity and enthusiasm.
+- 40% for homework.
+- 20% for the final project.
+- More than 2 unexcused absences qualifies you for a failure.
+- 2 lateness of 15 minutes or more qualifies as 1 unexcused absence.
 
