@@ -120,7 +120,7 @@ Some of the questions we will ask and attempt to answer:
    * When does influence turn into interference?
    * Are leaders necessary? Is it possible to lead from behind?
    * What’s the difference between taking turns and having a conversation?
-   * Does participation become pointless if individual effort is completely subsumed under collective output?
+   * What participate if individual effort is subsumed under collective output?
    * Does democracy = inclusion?
    * What happens when the slowest person sets the pace?
 
