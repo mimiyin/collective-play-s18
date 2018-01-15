@@ -24,22 +24,47 @@
    * What is collective play?
    * What is NOT collective play?
    * Is "willingness to participate" a personality trait?
-#### Tech / Coding
-   * Setting up you local development environment
-   * [Atom Editor](https://github.com/mimiyin/sense-me-move-me/wiki/Atom) and [Atom Live Server Package](https://atom.io/packages/atom-live-server)
-   * [Websockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
-   * [Node Server](https://nodejs.org/en/)
-   * Sending real-time inputs: mouse + keyboard, phone sensors, mic level
+#### In-Class
+   * Exercises:
+        * Quiet Please!
+        * Telephone Tonge-Twisters.
+        * Strike a pose!
+   * Tech Tutorials
+      * Setting up you local development environment
+      * CLI - Command Line Interface
+      * [Atom Editor](https://github.com/mimiyin/sense-me-move-me/wiki/Atom) and [Atom Live Server Package](https://atom.io/packages/atom-live-server)
+      * [Websockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+      * [Node Server](https://nodejs.org/en/)
+   * Code Examples
+      * Sending real-time inputs: mouse + keyboard, phone sensors, mic level
+      * Sending inputs with a username
+      * Keeping track of inputs by id
+      * Separating inputs and outputs with namespaces
+      * Normalizing data across clients
 #### Assignment: Hello World
    * Complete your hello world example
+   * Sign up to implement 3 inputs.
 
 ***
 
 ## Week 2: Expressive Outputs
 #### Question(s)
    * What does it mean to be expressive?
-#### Design Strategies --> Code
-   * Collecting and expressing meta-data about inputs
+   * What are the parameters of expression in:
+      * Painting
+      * Spoken Word
+      * Singing
+#### In-Class
+   * Tech Tutorials
+      * Git
+      * Deploying to the web: Digital Ocean
+   * Exercise: Collective Drawing
+   * Collecting the next layer of input (ie. meta-data)
+   * Code Examples:
+      * Pollacky
+      * Texteoke
+      * Finger Drumming
+      * Albers Choral Wheel
 #### Assignment: Express yourself
    * Re-work your hello world example to be more expressive
 
@@ -48,9 +73,12 @@
 ## Week 3: Meaningful Outputs
 #### Question(s)
    * What does it mean to be meaningful?
-#### Design Strategies --> Code
-   * Encoding semantics
-   * Graffiti inputs to create new meanings
+   * Semantics is the study of the meaning of words or lexical meaning. What about non-lexical semantics?
+
+#### In-Class
+   * Setting up a semantic framework.
+   * Exercise: Whose Line Is It Anyway?!: Party Quirks
+   * Code Example: Harmonium
 #### Assignment: Say what you mean
   * Re-work your hello world example to be more meaningful
 
