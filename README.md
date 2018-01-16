@@ -19,16 +19,19 @@
 
 # Design Strategy 1: Every man for himself
 
-## Week 1: Hello World: Collecting Real-time Inputs
+## Week 1: Hello World: Real-time Inputs
 #### Question(s)
    * What is collective play?
-   * What is NOT collective play?
+   * How is collective interaction different from individual interaction?
+   * How do you know you've designed a successful interaction?
    * Is "willingness to participate" a personality trait?
+   * Is this a programming class?
 #### In-Class
    * Exercises:
         * Quiet Please!
         * Telephone Tonge-Twisters.
         * Strike a pose!
+   * Overview of Design Patterns
    * Tech Tutorials
       * Setting up you local development environment
       * CLI - Command Line Interface
@@ -43,7 +46,6 @@
       * Normalizing data across clients
 #### Assignment: Hello World
    * Complete your hello world example
-   * Sign up to implement 3 inputs.
 
 ***
 
@@ -55,18 +57,18 @@
       * Spoken Word
       * Singing
 #### In-Class
-   * Tech Tutorials
-      * Git
-      * Deploying to the web: Digital Ocean
    * Exercise: Collective Drawing
    * Collecting the next layer of input (ie. meta-data)
    * Code Examples:
       * Pollacky
       * Texteoke
       * Finger Drumming
-      * Albers Choral Wheel
+   * Tech Tutorials
+      * Git
+      * Deploying to the web: Digital Ocean
 #### Assignment: Express yourself
    * Re-work your hello world example to be more expressive
+   * Please bring ear-bud headphones for your mobile device to class next week.
 
 ***
 
@@ -77,64 +79,92 @@
 
 #### In-Class
    * Setting up a semantic framework.
-   * Exercise: Whose Line Is It Anyway?!: Party Quirks
-   * Code Example: Harmonium
+   * Exercise: Whose Line Is It Anyway?! - Party Quirks
+   * Code Example:
+      * Harmonium
+      * Albers Choral Wheel
+   * Demo: Walking and Falling on the Noise Field
+
 #### Assignment: Say what you mean
-  * Re-work your hello world example to be more meaningful
+  * Groups of 3: Create a semantic framework for 1 of your expressive projects.
+
+***
+## Week 4: User-test / Crit Semantic Expression Assignment
+#### Preview Partnering
 
 ***
 ***
 
-# Design Strategy 2: Pairing up
+# Design Strategy 2: Pairing
 
-## Week 4: Influence or Interference?
+## Week 5: Influence or Interference?
 #### Question(s)
    * When does influence turn into interference?
-#### Design Strategies --> Code
-   * Pairing up participants
-   * Mashing up inputs so that inputs from 1 participant influences or interferes with the output of the other.
-#### Assignment: Say what you mean
-   * Work in pairs: Mash-up your 2 projects together
+   * Is it more fun to cooperate or undermine?
+   * Are you more or less honest when you're anonymous?
+#### In-Class
+* Exercises:
+   * Human Ouija Board
+   * Human Curling
+   * Scarf Play
+* Mashing up inputs into pairs.
+   * Examples
+      * Synchronized Magic Eight
+      * Scr-ong
+      * Anonymous speed-dating
+
+#### Assignment: Mash-up
+   * Groups of 4: Don't start from scratch. Try mashing-up 2 of your projects.
 
 ***
 
-## Week 5: User-test / Crit Mash-up Assignment
+## Week 6: User-test / Crit Mash-up Assignment
+#### Preview Queuing
 
 ***
+# Design Strategy 3: Queuing
 
-## Week 6: Taking Turns
+## Week 7: Waiting versus Anticipating
 #### Question(s)
    * What's the difference between taking turns and having a conversation?
-#### Design Strategies --> Code
+#### In-Class
    * Keeping track of who's turn it is
+   * Example: Dear John
    * Taking turns drawing, writing text, making noise.
-#### In-class
-   * Change your Week 3 Assignment into taking turns.
+
+#### Assignment
+   * Groups of 3: Make a queuing project.
 
 ***
 
-# Design Strategy 3: Losing the Individual to the Group
+# Design Strategy 4: Group Effort
 
-## Week 7: Add versus Average
-#### Question(s)
+## Week 8: Losing the Individual to the Group
+
+#### Questions
    * Why bother singing if your voice can't be heard?
-#### Design Strategies --> Code --> Test
-   * Adding versus averaging group effort
-
-***
-
-## Week 8: Voting and Rate-determining Step
-#### Question(s)
+   * Are crowds smarter than individuals?
+   * Which is better? Survival of the fittest? Or No ant left behind.
    * Does democracy = inclusion?
-   * What happens when the slowest person sets the pace?
-#### Design Strategies --> Code --> Test
-   * Counting votes.
-       * Winner-takes all v. proportional representation.
-   * Waiting for the last person to finish.
+
+#### In-Class
+   * Exercises:
+      * The Wave and other ways to conduct crowds
+      * How many jelly beans are in the jar?
+      * Where's Waldo
+   * Code Examples
+      * The Red Balloon
+         * Max, min, mean and median: 4 ways to compute group effort.
+         * Syncing effort.
+      * Youtube Survivor
 
 ***
 
 ## Weeks 9-12: Final Project Development
+  * Week 9 Critique Proposals
+  * Week 10 User-Test Group A
+  * Week 11 User-Test Group B
+  * Week 12 Final Presentations
 
 ***
 ***
