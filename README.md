@@ -154,9 +154,10 @@
       * Where's Waldo
    * Code Examples
       * The Red Balloon
-         * Max, min, mean and median: 4 ways to compute group effort.
-         * Syncing effort.
+         * Re-shaping the distribution curve of participation: Max, min, mean and median: 4 ways to compute group effort.
+         * The Joy of Synchronicity
       * Youtube Survivor
+         * Voting Schemes
 
 ***
 
