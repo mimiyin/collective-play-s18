@@ -14,6 +14,6 @@ http.createServer(function (req, res) {
   // Send a message back to the client
   // No html required!
   res.end('Hello world!', req);
-}).listen(PORT);
+}).listen(port);
 
-console.log('Server listening on port: ', PORT);
+console.log('Server listening on port: ', port);
