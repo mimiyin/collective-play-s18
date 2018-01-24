@@ -47,6 +47,7 @@
 #### Assignment: Hello World
    * [Brainstorm Inputs](https://docs.google.com/spreadsheets/d/1b9LKOaFIROEpqssoxWhezXpO-kd9_njg_i2XblIOiFQ/edit#gid=0)
    * Sign-up to implement 3 inputs.
+   * Bring 5 things to draw with next week.
 
 ***
 
