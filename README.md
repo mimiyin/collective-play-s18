@@ -1,5 +1,5 @@
 # Collective Play Spring 18 Syllabus -- Work-in-progress
-   * Time and Place TBD
+   * Wednesday 12:10-3:05PM in Room 20
    * Mimi Yin, mimi.yin@nyu.edu
    * [Office Hours Signup](https://itp.nyu.edu/inwiki/Signup/Mimi)
 
