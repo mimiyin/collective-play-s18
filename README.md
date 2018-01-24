@@ -45,7 +45,8 @@
       * Separating inputs and outputs with namespaces
       * Normalizing data across clients
 #### Assignment: Hello World
-   * Complete your hello world example
+   * [Brainstorm Inputs](https://docs.google.com/spreadsheets/d/1b9LKOaFIROEpqssoxWhezXpO-kd9_njg_i2XblIOiFQ/edit#gid=0)
+   * Sign-up to implement 3 inputs.
 
 ***
 
