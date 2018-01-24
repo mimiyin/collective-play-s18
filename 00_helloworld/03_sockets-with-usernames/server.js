@@ -30,7 +30,7 @@ io.sockets.on('connection',
     // Listen for data from this client
     socket.on('data', function (data) {
       // Data can be numbers, strings, objects
-      //console.log("Received: 'message' " + data);
+      //console.log("Received: 'data' " + data);
 
       // Send message with username
       let message = {
@@ -40,7 +40,6 @@ io.sockets.on('connection',
 
       // Send it to all of the clients, including this one
       io.sockets.emit('message', message);
-
     });
 
     // Listen for this client to disconnect

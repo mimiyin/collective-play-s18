@@ -11,7 +11,7 @@ function setup(){
   });
 
   // Receive message from server
-  socket.on('message', drawPos);
+  socket.on('data', drawPos);
 }
 
 function mouseMoved() {

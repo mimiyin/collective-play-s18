@@ -44,7 +44,7 @@ inputs.on('connection', function(socket){
   // Listen for data messages from this client
   socket.on('data', function(data) {
     // Data comes in as whatever was sent, including objects
-    //console.log("Received: 'message' " + data);
+    //console.log("Received: 'data' " + data);
 
     let message = {
       id: socket.id,

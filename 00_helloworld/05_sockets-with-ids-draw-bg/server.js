@@ -34,7 +34,7 @@ io.sockets.on('connection',
     // Listen for data from this client
     socket.on('data', function(data) {
       // Data can be numbers, strings, objects
-			//console.log("Received: 'message' " + data);
+			//console.log("Received: 'data' " + data);
 
       let message = {
         id: socket.id,

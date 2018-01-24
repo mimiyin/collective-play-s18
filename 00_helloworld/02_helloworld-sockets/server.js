@@ -23,16 +23,16 @@ io.sockets.on('connection',
     // Listen for data from this client
 		socket.on('data', function(data) {
       // Data can be numbers, strings, objects
-			console.log("Received: 'message' " + data);
+			console.log("Received: 'data' " + data);
 
 			// Send it to all clients, including this one
-			io.sockets.emit('message', data);
+			io.sockets.emit('data', data);
 
       // Send it to all other clients, not including this one
-      //socket.broadcast.emit('message', data);
+      //socket.broadcast.emit('data', data);
 
       // Send it just this client
-      // socket.emit('message', data);
+      // socket.emit('data', data);
 		});
 
     // Listen for this client to disconnect
