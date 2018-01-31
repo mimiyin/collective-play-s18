@@ -72,8 +72,11 @@
       * Texteoke
       * Finger Drumming
    * Tech Tutorials
-      * Git
-      * Deploying to the web: Digital Ocean
+      * [What is my ip](https://www.google.com/search?q=what+is+my+ip&oq=what+is+my+ip)
+   * Links
+      * [How to paint like Jackson Pollack](https://www.youtube.com/watch?v=EncR_T0faKM&t=150s)
+      * [Laura Krudener](https://www.youtube.com/watch?v=X13bHWaP40Y)
+      * [Paper by fiftythree](https://itunes.apple.com/us/app/paper-by-fiftythree/id506003812?mt=8)
 #### Assignment: Express yourself
    * Re-work your hello world example to be more expressive
    * Please bring ear-bud headphones for your mobile device to class next week.
