@@ -75,9 +75,10 @@ function draw() {
       push();
       translate(pos.x, pos.y);
       ellipse(0, 0, 10, 10);
-      
+
       // Draw username at the end of the snake
       if(p == 0 ) {
+        textSize(24);
         text(username, 10, 0);
       }
       pop();
