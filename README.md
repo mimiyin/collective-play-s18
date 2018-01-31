@@ -72,7 +72,7 @@
       * Texteoke
       * Finger Drumming
    * Links
-      * [How to paint like Jackson Pollack](https://www.youtube.com/watch?v=EncR_T0faKM&t=150s)
+      * [How to paint like Jackson Pollack](https://www.youtube.com/watch?v=EncR_T0faKM&t=40s)
       * [Laura Krudener](https://www.youtube.com/watch?v=X13bHWaP40Y)
       * [Paper by fiftythree](https://itunes.apple.com/us/app/paper-by-fiftythree/id506003812?mt=8)
 #### Assignment: Express yourself
