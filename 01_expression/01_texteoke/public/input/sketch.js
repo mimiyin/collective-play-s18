@@ -13,13 +13,14 @@ let str = '';
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  textAlign(CENTER, CENTER);
 }
 
 // Display typing
 function draw() {
   background(255);
-  textSize(24);
-  text(str, 50, height / 2);
+  textSize(128);
+  text(str, width / 2, height / 2);
 }
 
 // Only listen for ASCII keys to add to string
