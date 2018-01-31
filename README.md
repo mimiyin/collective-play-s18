@@ -71,8 +71,6 @@
       * Pollacky
       * Texteoke
       * Finger Drumming
-   * Tech Tutorials
-      * [What is my ip](https://www.google.com/search?q=what+is+my+ip&oq=what+is+my+ip)
    * Links
       * [How to paint like Jackson Pollack](https://www.youtube.com/watch?v=EncR_T0faKM&t=150s)
       * [Laura Krudener](https://www.youtube.com/watch?v=X13bHWaP40Y)
