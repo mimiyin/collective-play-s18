@@ -91,7 +91,7 @@
    * Exercises: 
       * Tableau
       * Cheering Track
-   * [Pauline Oliveros: Tuning Meditation](https://youtu.be/g5bj8sO2-WY?t=0) | [About](https://www.metmuseum.org/press/news/2017/tuning-meditation)
+   * [Pauline Oliveros: Tuning Meditation](https://youtu.be/g5bj8sO2-WY?t=28) | [Arpeggio](https://youtu.be/g5bj8sO2-WY?t=55) | [About](https://www.metmuseum.org/press/news/2017/tuning-meditation)
    * Code Example:
       * Harmonium
 
