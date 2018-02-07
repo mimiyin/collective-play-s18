@@ -88,14 +88,16 @@
 
 #### In-Class
    * Setting up a semantic framework.
-   * Exercise: Whose Line Is It Anyway?! - Party Quirks
+   * Exercises: 
+      * Tableau
+      * Cheering Track
+   * [Pauline Oliveros: Tuning Meditation](https://youtu.be/g5bj8sO2-WY?t=0) | [About](https://www.metmuseum.org/press/news/2017/tuning-meditation)
    * Code Example:
       * Harmonium
-      * Albers Choral Wheel
-   * Demo: Walking and Falling on the Noise Field
 
 #### Assignment: Say what you mean
-  * Groups of 3: Create a semantic framework for 1 of your expressive projects.
+   * [Group Assignments](https://docs.google.com/spreadsheets/d/1S9QClmuv5jk1pGdfEqdGwBLwzDx6OZKRWb1SOjbBFxc/edit?usp=sharing)
+   * Groups of 4: Create a semantic framework for 1 of your expressive projects.
 
 ***
 ## Week 4: User-test / Crit Semantic Expression Assignment
