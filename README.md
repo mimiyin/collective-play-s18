@@ -93,8 +93,8 @@
       * Cheering Track
    * [Pauline Oliveros: Tuning Meditation](https://youtu.be/g5bj8sO2-WY?t=28) | [Arpeggio](https://youtu.be/g5bj8sO2-WY?t=55) | [About](https://www.metmuseum.org/press/news/2017/tuning-meditation)
    * Code Example:
-      * Harmonium
-
+      * Harmonium: [Glitch](https://glitch.com/edit/#!/harmonium?path=server.js:1:0)
+      
 #### Assignment: Say what you mean
    * [Group Assignments](https://docs.google.com/spreadsheets/d/1S9QClmuv5jk1pGdfEqdGwBLwzDx6OZKRWb1SOjbBFxc/edit?usp=sharing)
    * Groups of 4: Create a semantic framework for 1 of your expressive projects.
