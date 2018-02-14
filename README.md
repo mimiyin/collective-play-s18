@@ -101,7 +101,13 @@
 
 ***
 ## Week 4: User-test / Crit Semantic Expression Assignment
-#### Preview Partnering
+   * [Placer Neurons](http://www.radiolab.org/story/110165-you-are-here/)
+#### Preview Partnering??
+#### Assignment: Post-Mortem
+   * What worked.
+   * What didn't work.
+   * What could you have done differently? And what effect would it have had?
+   * Iterate on your design with 1 simple change.
 
 ***
 ***
