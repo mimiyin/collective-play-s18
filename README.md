@@ -103,6 +103,7 @@
 ## Week 4: User-test / Crit Semantic Expression Assignment
    * [Place Neurons](http://www.radiolab.org/story/110165-you-are-here/)
 #### Preview Partnering??
+   * [Speaking in One Voice](https://youtu.be/hoTAziyhO7s?t=100)
 #### Assignment: Post-Mortem
    * [Fill out this worksheet.](https://docs.google.com/spreadsheets/d/1b_OyJnZx2k3Av_7GnWv2OKqqDUg_p_0GZZV-BM3Zxx0/edit?usp=sharing) Each team has a tab.
    * What worked.
