@@ -12,6 +12,7 @@ let users = {};
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(255);
+  textAlign(CENTER, CENTER);
 
   // Listen for add message from server
   socket.on('add', function (message) {
@@ -19,7 +20,6 @@ function setup() {
     let id = message.id;
     let speed = message.data.speed;
     let charToAdd = message.data.add;
-    let numCharsToRemove = message.data.remove;
 
     // New user
     if (!(id in users)) {
@@ -27,14 +27,15 @@ function setup() {
         text: '',
         speed: 10,
         pos: {
-          x: random(width),
-          y: random(height)
+          x: random(50, width-50),
+          y: random(50, height-50)
         }
       }
     }
 
-    // Update speed
+    // Update speed for user
     users[id].speed = speed;
+    // Update string for user
     users[id].text += charToAdd;
   });
 
@@ -44,6 +45,7 @@ function setup() {
     if (!(id in users)) {
       return;
     }
+    // Remove last character in string
     users[id].text = users[id].text.slice(0, -1);
   });
 
@@ -53,6 +55,7 @@ function setup() {
     if (!(id in users)) {
       return;
     }
+    // Empty out string
     users[id].text = '';
   });
 
