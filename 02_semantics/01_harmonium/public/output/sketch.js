@@ -122,5 +122,5 @@ function draw() {
   pop();
 
   // Send conductor data
-  socket.emit('data', dir);
+  socket.emit('conductor', dir);
 }
