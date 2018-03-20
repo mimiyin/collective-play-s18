@@ -165,11 +165,10 @@
    * Play "Taking Turns" projects
 
 #### Assignments
-   * Analyze our class' (in)visible lists. [See questions]
+   * Analyze our class' (in)visible lists. [See questions](https://github.com/mimiyin/collective-play-s18/wiki/Questions-for-(In)Visible)
    * Group up for your Final Projects: [Sign-up Sheet](https://docs.google.com/spreadsheets/d/1A-8zrAx1TAw90LY8Fzo9cOjU4SZvNO0Y9z6H4sionhE/edit?usp=sharing)
    * Pick a few inter-personal dynamics you would like to explore in your final project.
    * Design an in-class exercise that explores some of these dynamics.
-   * Create an in-class experience to move forward on your final project idea.
 
 ***
 
