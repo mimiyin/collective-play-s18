@@ -158,22 +158,18 @@
 ## Week 8: Losing the Individual to the Group
 
 #### Questions
-   * Why bother singing if your voice can't be heard?
-   * Are crowds smarter than individuals?
-   * Which is better? Survival of the fittest? Or No ant left behind.
-   * Does democracy = inclusion?
+   * When do you want to be (in)visible?
 
 #### In-Class
-   * Exercises:
-      * The Wave and other ways to conduct crowds
-      * How many jelly beans are in the jar?
-      * Where's Waldo
-   * Code Examples
-      * The Red Balloon
-         * Re-shaping the distribution curve of participation: Max, min, mean and median: 4 ways to compute group effort.
-         * The Joy of Synchronicity
-      * Youtube Survivor
-         * Voting Schemes
+   * Surprise!
+   * Play "Taking Turns" projects
+
+#### Assignments
+   * Analyze our class' (in)visible lists. [See questions]
+   * Group up for your Final Projects: [Sign-up Sheet](https://docs.google.com/spreadsheets/d/1A-8zrAx1TAw90LY8Fzo9cOjU4SZvNO0Y9z6H4sionhE/edit?usp=sharing)
+   * Pick a few inter-personal dynamics you would like to explore in your final project.
+   * Design an in-class exercise that explores some of these dynamics.
+   * Create an in-class experience to move forward on your final project idea.
 
 ***
 
