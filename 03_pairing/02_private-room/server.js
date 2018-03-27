@@ -32,22 +32,8 @@ io.sockets.on('connection', function (socket) {
     // Which private room does this client belong to?
     let room = socket.room;
 
-    // Wrap up data in a message with the socketId
-    let message = {
-      id: socket.id,
-      data: data,
-    };
-
     // Share data to all members of room
-    io.in(room).emit('text', message);
-  });
-
-  // Listen for line breaks
-  socket.on('break', function(){
-    // Which private room does this client belong to?
-    let room = socket.room;
-    // Share data between members of a private room
-    io.in(room).emit('break', socket.id);
+    socket.to(room).emit('text', data);
   });
 
 
@@ -60,7 +46,7 @@ io.sockets.on('connection', function (socket) {
     let room = socket.room;
     // Tell others in room client has left
     if (rooms[room]) {
-      socket.to(room).emit('leave room', socket.id);
+      socket.to(room).emit('leave room');
     }
   });
 });

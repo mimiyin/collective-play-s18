@@ -1,11 +1,10 @@
 body {
-  font-family: sans-serif;
-  position: fixed;
-  bottom: 0px;
-  padding-bottom: 3em;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-
-
 #input {
   position: fixed;
   bottom: 0px;
@@ -14,8 +13,16 @@ body {
   height: 2em;
   font-size: 1.5em;
 }
-
 p {
+  font-family: sans-serif;
   font-size: 1.5em;
-  margin: .1em 0;
+  text-align: center;
+  margin-top: 40vh;
+}
+p.fade {
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+  opacity: 0;
 }
