@@ -14,8 +14,6 @@ function createNewUser(id) {
   users[id] = {
     pos: { x : width/2, y : height/2 },
     ppos: { x : width/2, y : height/2 }
-    // pos: createVector(width/2, height/2), //{ x : width/2, y : height/2 },
-    // ppos: createVector(width/2, height/2), //{ x : width/2, y : height/2 }
   }
 }
 

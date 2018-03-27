@@ -59,10 +59,25 @@ function setup() {
 
   // Peg frameRate to 30
   frameRate(30);
+
+  // Generate fake data
+  // randomSeed(0);
+  // noiseSeed(0);
+  // for(let i = 0; i < 16; i++) {
+  //   let u = random(100);
+  //   users[u] = randomGaussian(MAX_SPEED*0.67, MAX_SPEED);
+  //   users[u] = constrain(users[u], MIN_SPEED, MAX_SPEED);
+  // }
 }
 
 function draw() {
   background(255);
+
+  // Move fake data
+  // for(let u in users) {
+  //   users[u] += (noise(frameCount*0.01)-0.5)*random(1);
+  //   users[u] = constrain(users[u], MIN_SPEED, MAX_SPEED);
+  // }
 
   ////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////
@@ -90,13 +105,14 @@ function draw() {
     if (user > maxSpeed) maxSpeed = user;
     if (user < minSpeed) minSpeed = user;
   }
+
   // Calculate the mid-point between the fastest and slowest speeds
   let medianSpeed = (maxSpeed + minSpeed) / 2;
 
   // Decide which speed will represent the group
-  let speed = meanSpeed || MAX_SPEED;
-  // let speed = medianSpeed;
-  // let speed = minSpeed;
+  //let speed = meanSpeed || MAX_SPEED;
+  let speed = medianSpeed;
+  //let speed = maxSpeed;
 
   // Playback speed of hamstar dance
   // 1 second speed = no playback
@@ -124,17 +140,24 @@ function draw() {
   let userNum = 0;
   let m = 100;
   let colW = (width-(2*m)) / numUsers;
-  let scl = height/300;
+  let scl = height/150;
   noStroke();
   for (let u in users) {
     let speed = users[u]*scl;
     ellipse((userNum * colW) + m, speed, 20, 20);
     userNum++;
   }
+
+  noStroke();
+  fill(0);
+  text("MEAN", m, meanSpeed*scl);
+  text("MEDIAN", m, medianSpeed*scl);
+  text("MAX", m, maxSpeed*scl);
+
   stroke(0);
   line(0, meanSpeed*scl, width, meanSpeed*scl);
   line(0, medianSpeed*scl, width, medianSpeed*scl);
-  line(0, minSpeed*scl, width, minSpeed*scl);
+  line(0, maxSpeed*scl, width, maxSpeed*scl);
 
 
   // Draw clock volume
