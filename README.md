@@ -161,21 +161,31 @@
    * When do you want to be (in)visible?
 
 #### In-Class
-   * Surprise!
    * Play "Taking Turns" projects
+   * Analyze (in)visible responses.
 
-#### Assignments
-   * Analyze our class' (in)visible lists. [See questions](https://github.com/mimiyin/collective-play-s18/wiki/Questions-for-(In)Visible)
-   * Group up for your Final Projects: [Sign-up Sheet](https://docs.google.com/spreadsheets/d/1A-8zrAx1TAw90LY8Fzo9cOjU4SZvNO0Y9z6H4sionhE/edit?usp=sharing)
-   * Pick a few inter-personal dynamics you would like to explore in your final project.
-   * Design an in-class exercise that explores some of these dynamics.
+#### Assignment
+   * Design and run a human-only (no technology) interaction.
+      * Be clear about what relationship dynamics you're exploring: e.g. open-ended, confrontation!
+      * Be clear about what emotional dynamics you're exploring: e.g. self-consciousness and validation
+   * Think out of the box of our class. Try something outside. Try something with 30 people. Try something that takes an hour!
+   * Post-mortem what you did: What did you expect to happen? What actually happened? What could you tweak to get a very different outcome?
+   * Next week, you will be asked to re-design your interaction and run it again.
+   * You will present your results in 2 weeks.
 
+## Week 9: Losing the Individual to the Group
+
+#### In-Class
+  * Play test "Jog Wheel"
+
+#### Assignment
+   * Re-design and run your human-only interaction.
+   * Prepare a short presentation of your findings.
 ***
 
-## Weeks 9-12: Final Project Development
-  * Week 9 Critique Proposals
-  * Week 10 User-Test Group A
-  * Week 11 User-Test Group B
+## Weeks 10-12: Final Project Development
+  * Week 10 Present human play test results
+  * Week 11 In-Class User Testing
   * Week 12 Final Presentations
 
 ***
