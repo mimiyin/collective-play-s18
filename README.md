@@ -169,9 +169,9 @@
       * Be clear about what relationship dynamics you're exploring: e.g. open-ended, confrontation!
       * Be clear about what emotional dynamics you're exploring: e.g. self-consciousness and validation
    * Think out of the box of our class. Try something outside. Try something with 30 people. Try something that takes an hour!
+   * Document the event.
    * Post-mortem what you did: What did you expect to happen? What actually happened? What could you tweak to get a very different outcome?
-   * Next week, you will be asked to re-design your interaction and run it again.
-   * You will present your results in 2 weeks.
+   * Post your documentation to your blog.   
 
 ## Week 9: Losing the Individual to the Group
 
@@ -179,7 +179,7 @@
   * Play test "Jog Wheel"
 
 #### Assignment
-   * Re-design and run your human-only interaction.
+   * Re-design, run, document and post-mortem take 2 of your human-only interaction.
    * Prepare a short presentation of your findings.
 ***
 
