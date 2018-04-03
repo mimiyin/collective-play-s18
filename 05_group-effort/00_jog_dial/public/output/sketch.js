@@ -10,13 +10,19 @@ socket.on('connect', function () {
 let users = {};
 // Sounds
 let hamstar, clock;
+
+// Min number of users
+let MIN_USERS = 1;
+
 // Number of frames elapsed for song to play 2x
-let MAX_SPEED = 60;
+let MIN_INTERVAL = 5;
 // Number of frames elapsed for song to play 0x
-let MIN_SPEED = 5;
+let MAX_INTERVAL = 60;
 
 // Volume for clock
 let clockVol = -5;
+let CLOCK_SENSITIVITY = 0.25;
+let CLOCK_VOL_SPEED = 0.005;
 
 function preload() {
   hamstar = loadSound('hamstar.mp3');
@@ -29,7 +35,7 @@ function setup() {
   // Listen for movement data
   socket.on('move', function (data) {
     // If there's slight movement, set
-    if (data > 0.5) clockVol = -5;
+    if (data > CLOCK_SENSITIVITY) clockVol = -5;
     // Compare that to this:
     //if (data > 0.5) clockVol -= 0.5;
 
@@ -38,11 +44,11 @@ function setup() {
   // Listen for shake data
   socket.on('shake', function (message) {
     let id = message.id;
-    let speed = message.data;
+    let interval = message.data;
     // Ignore super fast shakes - noisy data
-    if(speed > MIN_SPEED) {
-      console.log(speed);
-      users[id] = speed;
+    if(interval > MIN_INTERVAL) {
+      console.log(interval);
+      users[id] = interval;
     }
   });
 
@@ -59,25 +65,10 @@ function setup() {
 
   // Peg frameRate to 30
   frameRate(30);
-
-  // Generate fake data
-  // randomSeed(0);
-  // noiseSeed(0);
-  // for(let i = 0; i < 16; i++) {
-  //   let u = random(100);
-  //   users[u] = randomGaussian(MAX_SPEED*0.67, MAX_SPEED);
-  //   users[u] = constrain(users[u], MIN_SPEED, MAX_SPEED);
-  // }
 }
 
 function draw() {
   background(255);
-
-  // Move fake data
-  // for(let u in users) {
-  //   users[u] += (noise(frameCount*0.01)-0.5)*random(1);
-  //   users[u] = constrain(users[u], MIN_SPEED, MAX_SPEED);
-  // }
 
   ////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////
@@ -87,45 +78,46 @@ function draw() {
   ////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////
 
-  // Find the mean average speed
-  let meanSpeed = 0;
+  // Find the mean average interval
+  let meanInterval = 0;
   // Count number of users
   let numUsers = 0;
   for (let u in users) {
-    meanSpeed += users[u];
+    meanInterval += users[u];
     numUsers++;
   }
-  meanSpeed /= numUsers;
+  meanInterval /= MIN_USERS;
 
-  // Find the median average speed
-  let maxSpeed = 0;
-  let minSpeed = 1000000000;
+  // Find the median average interval
+  let maxInterval = 0;
+  let minInterval = 1000000000;
   for (let u in users) {
-    let user = users[u];
-    if (user > maxSpeed) maxSpeed = user;
-    if (user < minSpeed) minSpeed = user;
+    let interval = users[u];
+    if (interval < minInterval) minInterval = interval;
+    if (interval > maxInterval) maxInterval = interval;
   }
 
-  // Calculate the mid-point between the fastest and slowest speeds
-  let medianSpeed = (maxSpeed + minSpeed) / 2;
+  // Calculate the mid-point between the smallest and largest interval
+  let medianInterval = (maxInterval + minInterval) / 2;
 
-  // Decide which speed will represent the group
-  //let speed = meanSpeed || MAX_SPEED;
-  let speed = medianSpeed;
-  //let speed = maxSpeed;
+  // Decide which interval will represent the group
+  //let interval = meanInterval || MAX_INTERVAL;
+  let interval = medianInterval;
+  //let interval = maxInterval;
 
   // Playback speed of hamstar dance
-  // 1 second speed = no playback
-  // 0 second speed = 10x playback
-  let playSpeed = map(speed, MAX_SPEED, MIN_SPEED, 0, 2);
+  // 1 second interval = no playback
+  // 0 second interval = 2x playback
+  let playSpeed = map(interval, MIN_INTERVAL, MAX_INTERVAL, 2, 0);
+  playSpeed = constrain(playSpeed, 0, 2);
 
-  // Set playback speed of hamstar dance 3x a second
+  // Set playback speed of hamstar dance - don't let it actually fall to 0
   if(frameCount%10 == 0) hamstar.rate(max(0.001, playSpeed));
 
 
   // Clock increases volume all the time if there are users
-  if (numUsers > 0) {
-    clockVol += 0.005;
+  if (numUsers >= MIN_USERS) {
+    clockVol += CLOCK_VOL_SPEED;
     clock.setVolume(constrain(clockVol, 0, 5));
   }
 
@@ -139,25 +131,25 @@ function draw() {
 
   let userNum = 0;
   let m = 100;
-  let colW = (width-(2*m)) / numUsers;
+  let colW = (width-(2*m)) / MIN_USERS;
   let scl = height/150;
   noStroke();
   for (let u in users) {
-    let speed = users[u]*scl;
-    ellipse((userNum * colW) + m, speed, 20, 20);
+    let interval = users[u]*scl;
+    ellipse((userNum * colW) + m, interval, 20, 20);
     userNum++;
   }
 
   noStroke();
   fill(0);
-  text("MEAN", m, meanSpeed*scl);
-  text("MEDIAN", m, medianSpeed*scl);
-  text("MAX", m, maxSpeed*scl);
+  text("MEAN", m, meanInterval*scl);
+  text("MEDIAN", m, medianInterval*scl);
+  text("MIN", m, maxInterval*scl);
 
   stroke(0);
-  line(0, meanSpeed*scl, width, meanSpeed*scl);
-  line(0, medianSpeed*scl, width, medianSpeed*scl);
-  line(0, maxSpeed*scl, width, maxSpeed*scl);
+  line(0, meanInterval*scl, width, meanInterval*scl);
+  line(0, medianInterval*scl, width, medianInterval*scl);
+  line(0, maxInterval*scl, width, maxInterval*scl);
 
 
   // Draw clock volume
