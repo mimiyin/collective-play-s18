@@ -3,7 +3,7 @@ let socket = io('/input');
 
 // Keep track of when last shaken
 let lastShaken = 0;
-let speed = 30;
+let interval = 30;
 // Number of shakes
 let num = 0;
 
@@ -32,10 +32,10 @@ function draw() {
 
   // Check once a second if user has slowed down
   if (frameCount % 30 == 0) {
-    let newSpeed = frameCount - lastShaken;
-    if (newSpeed > speed) {
-      speed = newSpeed;
-      socket.emit('shake', speed);
+    let newInterval = frameCount - lastShaken;
+    if (newInterval > interval) {
+      interval = newInterval;
+      socket.emit('shake', interval);
     }
   }
 }
@@ -46,8 +46,8 @@ function deviceShaken() {
   if(frameCount - lastShaken < 5) return;
   num++;
   background('red');
-  speed = frameCount - lastShaken;
-  socket.emit('shake', speed);
+  interval = frameCount - lastShaken;
+  socket.emit('shake', interval);
   lastShaken = frameCount;
 }
 
