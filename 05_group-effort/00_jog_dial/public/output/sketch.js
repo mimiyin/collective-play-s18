@@ -21,7 +21,7 @@ let MAX_INTERVAL = 60;
 
 // Volume for clock
 let clockVol = -5;
-let CLOCK_SENSITIVITY = 0.25;
+let CLOCK_SENSITIVITY = .425;
 let CLOCK_VOL_SPEED = 0.005;
 
 function preload() {
@@ -35,7 +35,10 @@ function setup() {
   // Listen for movement data
   socket.on('move', function (data) {
     // If there's slight movement, set
-    if (data > CLOCK_SENSITIVITY) clockVol = -5;
+    if (data > CLOCK_SENSITIVITY) {
+      clockVol = -5;
+      console.log("DAMN", data);
+    }
     // Compare that to this:
     //if (data > 0.5) clockVol -= 0.5;
 
@@ -45,11 +48,12 @@ function setup() {
   socket.on('shake', function (message) {
     let id = message.id;
     let interval = message.data;
+    //console.log(interval);
     // Ignore super fast shakes - noisy data
-    if(interval > MIN_INTERVAL) {
-      console.log(interval);
+    if (interval > MIN_INTERVAL) {
       users[id] = interval;
     }
+
   });
 
   // Listen for disconnection to remove user
@@ -86,9 +90,9 @@ function draw() {
     meanInterval += users[u];
     numUsers++;
   }
-  meanInterval /= MIN_USERS;
+  meanInterval /= numUsers;
 
-  // Find the median average interval
+  // Find the midpoint average interval
   let maxInterval = 0;
   let minInterval = 1000000000;
   for (let u in users) {
@@ -98,11 +102,11 @@ function draw() {
   }
 
   // Calculate the mid-point between the smallest and largest interval
-  let medianInterval = (maxInterval + minInterval) / 2;
+  let midpointInterval = (maxInterval + minInterval) / 2;
 
   // Decide which interval will represent the group
-  //let interval = meanInterval || MAX_INTERVAL;
-  let interval = medianInterval;
+  let interval = meanInterval || MAX_INTERVAL;
+  //let interval = midpointInterval;
   //let interval = maxInterval;
 
   // Playback speed of hamstar dance
@@ -112,7 +116,7 @@ function draw() {
   playSpeed = constrain(playSpeed, 0, 2);
 
   // Set playback speed of hamstar dance - don't let it actually fall to 0
-  if(frameCount%10 == 0) hamstar.rate(max(0.001, playSpeed));
+  if (frameCount % 10 == 0) hamstar.rate(max(0.001, playSpeed));
 
 
   // Clock increases volume all the time if there are users
@@ -131,25 +135,25 @@ function draw() {
 
   let userNum = 0;
   let m = 100;
-  let colW = (width-(2*m)) / MIN_USERS;
-  let scl = height/150;
+  let colW = (width - (2 * m)) / MIN_USERS;
+  let scl = height / 150;
   noStroke();
   for (let u in users) {
-    let interval = users[u]*scl;
+    let interval = users[u] * scl;
     ellipse((userNum * colW) + m, interval, 20, 20);
     userNum++;
   }
 
   noStroke();
   fill(0);
-  text("MEAN", m, meanInterval*scl);
-  text("MEDIAN", m, medianInterval*scl);
-  text("MIN", m, maxInterval*scl);
+  text("MEAN", m, meanInterval * scl);
+  text("MIDPOINT", m, midpointInterval * scl);
+  text("MIN", m, maxInterval * scl);
 
   stroke(0);
-  line(0, meanInterval*scl, width, meanInterval*scl);
-  line(0, medianInterval*scl, width, medianInterval*scl);
-  line(0, maxInterval*scl, width, maxInterval*scl);
+  line(0, meanInterval * scl, width, meanInterval * scl);
+  line(0, midpointInterval * scl, width, midpointInterval * scl);
+  line(0, maxInterval * scl, width, maxInterval * scl);
 
 
   // Draw clock volume
@@ -158,4 +162,28 @@ function draw() {
   else fill('red');
   noStroke();
   rect(0, height - h, width, h);
+  fill('black');
+  textSize(16);
+  text("SENSITIVITY " + nfs(CLOCK_SENSITIVITY, 0, 2), m, height - h);
+  text("SPEED " + nfs(CLOCK_VOL_SPEED, 0, 3), width-2*m, height - h);
+}
+
+function keyPressed() {
+  switch (keyCode) {
+    case UP_ARROW:
+      CLOCK_SENSITIVITY += 0.01;
+      break;
+    case DOWN_ARROW:
+      CLOCK_SENSITIVITY -= 0.01;
+      break;
+    case RIGHT_ARROW:
+      CLOCK_VOL_SPEED += 0.001;
+      break;
+    case LEFT_ARROW:
+      CLOCK_VOL_SPEED -= 0.001;
+      break;
+  }
+  // Constrain it
+  CLOCK_SENSITIVITY = constrain(CLOCK_SENSITIVITY, 0.01, 1);
+  CLOCK_VOL_SPEED = constrain(CLOCK_VOL_SPEED, 0, 1);
 }
