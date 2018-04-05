@@ -181,6 +181,7 @@
 #### Assignment
    * Re-design, run, document and post-mortem take 2 of your human-only interaction.
    * Prepare a short presentation of your findings.
+   * Include some early thoughts on how you might apply your findings to a digital expression of the ideas you're exploring.
 ***
 
 ## Weeks 10-12: Final Project Development
